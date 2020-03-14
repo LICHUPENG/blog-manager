@@ -1,0 +1,30 @@
+server:
+  port: 8080
+
+spring:
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    timeout: 600
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: root
+    url: jdbc:mysql://149.28.94.208:3306/blog?tinyInt1isBit=false&serverTimezone=UTC
+
+logging:
+  pattern:
+    console: "%d - %msg%n"
+  file:
+    path: /log/blog-auth/
+
+mybatis:
+  type-aliases-package: com.lcp.blog.entity            # 定义所有操作类的别名所在包
+  mapper-locations: classpath:**/mapper/*.xml     # 所有的mapper映射文件
+
+#mybaatis分页插件pagehelper设置
+pagehelper:
+  helperDialect: mysql
+  reasonable: true
+  support-methods-arguments: true
