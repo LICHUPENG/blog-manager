@@ -2,7 +2,6 @@ package com.lcp.blog.entity;
 
 import lombok.Data;
 
-import javax.persistence.Id;
 import java.io.Serializable;
 
 /**
@@ -14,7 +13,6 @@ public class BlogUser implements Serializable {
 
     private static final long serialVersionUID = 993535705446927059L;
 
-    @Id
     private String user_id;
 
     private String nickname;
@@ -30,4 +28,8 @@ public class BlogUser implements Serializable {
     private String salt;
 
     private Integer created_time;
+
+    private String user_info_id;
+
+    private String site_id;
 }

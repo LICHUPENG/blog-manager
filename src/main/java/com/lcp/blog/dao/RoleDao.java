@@ -1,7 +1,7 @@
 package com.lcp.blog.dao;
 
 import com.lcp.blog.common.dao.BaseDao;
-import com.lcp.blog.dao.mapper.RoleMapper;
+import com.lcp.blog.mapper.RoleMapper;
 import com.lcp.blog.entity.Role;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;

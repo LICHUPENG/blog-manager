@@ -1,4 +1,4 @@
-package com.lcp.blog.dao.mapper;
+package com.lcp.blog.mapper;
 
 import com.lcp.blog.entity.Role;
 import tk.mybatis.mapper.common.Mapper;

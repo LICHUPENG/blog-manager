@@ -12,7 +12,7 @@ import javax.validation.constraints.Size;
  * @date 2019-12-05 16:25
  */
 @Data
-public class LoginForm {
+public class loginForm {
 
     @NotBlank
     @Size(max = 7)

@@ -1,4 +1,4 @@
-package com.lcp.blog.dao.mapper;
+package com.lcp.blog.mapper;
 
 import com.lcp.blog.entity.UserRole;
 import org.apache.ibatis.annotations.Param;
