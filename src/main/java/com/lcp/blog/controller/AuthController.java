@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.*;
  */
 @RestController
 @RequiredArgsConstructor(onConstructor = @__(@Autowired))
-@RequestMapping("/blog/user")
+@RequestMapping("/user")
 public class AuthController {
 
     private final UserLoginService userLoginService;
