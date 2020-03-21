@@ -28,8 +28,4 @@ public class BlogUser implements Serializable {
     private String salt;
 
     private Integer created_time;
-
-    private String user_info_id;
-
-    private String site_id;
 }

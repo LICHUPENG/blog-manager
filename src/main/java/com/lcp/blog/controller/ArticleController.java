@@ -22,9 +22,9 @@ public class ArticleController {
     private final ArticleService articleService;
 
     @GetMapping("/list")
-    public Result getlist(Integer status, String title) {
+    public Result<List<Article>> getlist(Integer status, String title) {
         if (status == null) {
-            return new Result("状态不能为空!", AppException.FORM_INVALID);
+            return new Result<>("状态不能为空!", AppException.FORM_INVALID);
         }
         List<Article> list = this.articleService.getList(status, title);
         return new Result<>(list);

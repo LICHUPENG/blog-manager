@@ -5,6 +5,7 @@ import com.lcp.blog.common.annotation.DateTimeFields;
 import com.lcp.blog.common.dao.BaseDao;
 import com.lcp.blog.common.utils.AppFunction;
 import com.lcp.blog.entity.Article;
+import com.lcp.blog.mapper.ArticleMapper;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -37,7 +38,7 @@ public class ArticleDao extends BaseDao<Article> {
      */
     public static final int DELETE = -1;
 
-    private final ArticleMapper articleMapper;
+    private final ArticleMapper mapper;
 
     @Override
     protected Mapper<Article> getMapper() {
