@@ -1,5 +1,5 @@
 server:
-  port: 8080
+  port: 8081
   servlet:
     context-path: /blog
 
@@ -9,10 +9,8 @@ spring:
     port: 6379
     timeout: 600
   datasource:
-    type: com.zaxxer.hikari.HikariDataSource
-    driver-class-name: com.mysql.jdbc.Driver
     username: root
-    password: root
+    password: 747478486@QQ.com
     url: jdbc:mysql://localhost:3306/blog?tinyInt1isBit=false&serverTimezone=UTC
 
 logging:

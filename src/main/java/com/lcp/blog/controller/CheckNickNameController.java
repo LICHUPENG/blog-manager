@@ -18,7 +18,7 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @RestController
 @RequiredArgsConstructor(onConstructor = @__(@Autowired))
-@RequestMapping("/blog/check")
+@RequestMapping("/check")
 public class CheckNickNameController {
 
     private final CheckNickNameService checkNickNameService;
